@@ -75,3 +75,21 @@ header h1 {
 #caitlyn { top: 186px; left: 108px; } /* locked */
 #jocelyn { top: 243px; left: 108px; }  /* locked */
 #summer { top: 268px; left: 108px; }   /* moved up 1% */
+
+/* Gentle floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Apply animation to the card */
+.card-container {
+  animation: float 6s ease-in-out infinite;
+}

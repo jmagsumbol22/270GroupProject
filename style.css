@@ -1,0 +1,77 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff; /* White background */
+    text-align: center;
+    color: #333;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 3em;
+    color: #e63946; /* Cute red bubble text */
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+/* Container for small animal images */
+.header-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Symmetric spacing */
+    margin-bottom: 40px;
+}
+
+/* Small animal images */
+.animal-img {
+    width: 100px; /* Smaller, cute */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Vintage card container */
+.card-container {
+    position: relative;
+    display: inline-block;
+    width: 450px; /* Adjust to match your card image */
+    margin-bottom: 50px;
+}
+
+/* Card image */
+.card-image {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.3);
+}
+
+/* Overlay text on card */
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: #2c1a00; /* Dark brown for vintage feel */
+}
+
+/* Individual names positioned relative to the card lines */
+.name {
+    margin: 0;
+    position: absolute;
+}
+
+/* Locked positions for all except Summer */
+#jenaba { top: 216px; left: 108px; }   /* locked */
+#caitlyn { top: 186px; left: 108px; } /* locked */
+#jocelyn { top: 243px; left: 108px; }  /* locked */
+#summer { top: 268px; left: 108px; }   /* moved up 1% */

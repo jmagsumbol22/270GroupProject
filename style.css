@@ -1,10 +1,16 @@
 /* General page styling */
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-  background-color: #efe3c6;
-    text-align: center;
-    color: #333;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  color: #fff;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("library.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Header styling */

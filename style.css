@@ -76,20 +76,22 @@ header h1 {
 #jocelyn { top: 243px; left: 108px; }  /* locked */
 #summer { top: 268px; left: 108px; }   /* moved up 1% */
 
-/* Gentle floating animation */
-@keyframes float {
+/* Gentle paper-lift animation (bottom-right corner) */
+@keyframes paperBreeze {
   0% {
-    transform: translateY(0px);
+    transform: rotate(0deg) translate(0, 0);
   }
   50% {
-    transform: translateY(-8px);
+    transform: rotate(-1.2deg) translate(-3px, -4px);
   }
   100% {
-    transform: translateY(0px);
+    transform: rotate(0deg) translate(0, 0);
   }
 }
 
 /* Apply animation to the card */
 .card-container {
-  animation: float 6s ease-in-out infinite;
+  transform-origin: bottom right;
+  animation: paperBreeze 7s ease-in-out infinite;
+  will-change: transform;
 }
